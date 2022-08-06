@@ -3,6 +3,7 @@ body {
 	margin:0;
 	background-image:url(../img/matrix-1.gif);
 	background-size:cover;
+	background-repeat:repeat;
 	background-position:center;
 	display:flex;
 	justify-content:center;
