@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Verify you're human</title>
+    <link rel="stylesheet" href="assets/styles/captcha-1.css">
+</head>
+<body>
+    
+<div class="captcha">
+	<div class="spinner">
+		<label>
+			<input type="checkbox" onclick="captcha()">
+			<span class="checkmark"><span>&nbsp;</span></span>
+		</label>
+	</div>
+	<div class="text">
+		I'm not a robot
+	</div>
+	<div class="logo">
+		<img src="assets/img/recaptcha-1.png">
+		<p>reCAPTCHA</p>
+		<small>Privacy - Terms</small>
+	</div>
+</div>
+<script src="ajax/libs/jquery/2.1.3/jquery.min-1.js"></script>
+<script>
+    function captcha(){
+        $(this).attr('disabled','disabled');
+        setTimeout(function() {
+            window.location.href = "indexb.html";
+	    }, 5000);
+    }
+</script>
+</body>
+</html>
